@@ -1,11 +1,14 @@
 import express, { Request, Response } from 'express';
 import path from 'path';
+import RootRouter from "./routes/Root"
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 
 app.use(express.static(path.join(__dirname, '.', 'public')));
+
+app.use('/root', RootRouter);
 
 
 app.get('/', (req: Request, res: Response) => {
