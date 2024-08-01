@@ -8,3 +8,5 @@ export function getRoot(req :Request , res : Response) {
 export function getRootData(req :Request , res : Response) {
     res.send({"Error" : "Not Found"});
 }
+
+

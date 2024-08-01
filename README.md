@@ -5,6 +5,6 @@ bun install
 
 To run:
 ```sh
-bun start
+bun dev
 ```
 
